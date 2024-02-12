@@ -1,0 +1,295 @@
+/* header */
+.text-menu{
+    display: none;
+}
+header {
+    background-color: #535da1;
+    height: 200px;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.nav-contain {
+    border-radius: 10px;
+    margin-right: 12px;
+    margin-left: 12px;
+    padding: 10px 25px;
+    background-color: white;
+}
+
+.all-header p {
+    margin-left: 1rem;
+    margin-top: 15px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.all-header i {
+    margin-top: 15px;
+}
+
+.all-header {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-menu {
+    display: none;
+}
+
+.custom-btn {
+    font-size: 13px;
+    color: #14B789;
+    border-radius: 0.62rem;
+    cursor: pointer;
+    border-color: #14B789;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-bar {
+    padding: 6px 4px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.nav-bar-i {
+    background: #14B789;
+    color: white;
+    width: 35px;
+    height: 29px;
+    border-radius: 110px;
+    padding-top: 7px;
+}
+
+.tel-icon {
+
+    text-align: center;
+}
+
+#burger-menu {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    z-index: 2;
+    position: absolute;
+    top: 2rem;
+    left: 88%;
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+    background: #fff;
+    display: block;
+    height: 0.25rem;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    background: black;
+}
+
+#burger-menu span:before,
+#burger-menu span:after {
+    content: "";
+}
+
+#burger-menu span {
+    right: 1rem;
+    top: 1rem;
+    width: 1rem;
+}
+
+#burger-menu span:before {
+    left: 0px;
+    top: -0.6rem;
+    width: 1rem;
+}
+
+#burger-menu span:after {
+    left: 0px;
+    top: 0.6rem;
+    width: 1rem;
+}
+
+#burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 0.8rem;
+    width: 1rem;
+}
+
+#burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 1rem;
+}
+
+#burger-menu.close span:after {
+    top: 0px;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+}
+
+.text-menu2{
+    display: none;
+}
+
+#menu-header2{
+  
+    display: none;
+ 
+}
+
+@media (max-width:320px) {
+    .all-header {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    #menu-header {
+        display: none;
+    }
+
+    #burger-menu {
+        display: block;
+        cursor: pointer;
+        height: 1rem;
+        width: 1rem;
+        z-index: 2;
+        position: absolute;
+        top: 40px;
+        left: 3rem;
+    }
+
+    .text-menu ul {
+        display: flex;
+    }
+
+    .text-menu ul li {
+        padding: 10px;
+    }
+
+    .text-menu {
+        margin-top: 13px;
+    }
+
+    #menu-header.overlay {
+        display: block;
+        color: black;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .text-menu {
+        display: block;
+    }
+    
+    
+}
+
+@media (min-width:375px) and (max-width:1023px) {
+    #menu-header {
+        display: none;
+    }
+
+    #burger-menu {
+        display: block;
+        cursor: pointer;
+        height: 1rem;
+        width: 1rem;
+        z-index: 2;
+        position: absolute;
+        top: 40px;
+        left: 3rem;
+    }
+
+    .text-menu ul {
+        display: flex;
+    }
+
+    .text-menu ul li {
+        padding: 10px;
+    }
+
+    .text-menu {
+        margin-top: 13px;
+    }
+
+    #menu-header.overlay {
+        display: block;
+        color: black;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .text-menu {
+        display: block;
+    }
+}
+
+
+@media (min-width:1024px) {
+    #burger-menu {
+        display: none;
+    }
+
+    .text-menu {
+        display: block;
+    }
+
+    #menu-header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #menu-header li {
+        padding-right: 1rem;
+    }
+
+    .fa-solid {
+        margin-right: 10px;
+    }
+
+    .text-menu {
+        margin-top: 15px;
+
+    }
+
+    .text-menu2{
+        display: block;
+    }
+    
+    #menu-header2{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #menu-header2 li{
+        padding-right: 1rem;
+    }
+
+    .text-menu{
+        display: none;
+    }
+  
+}
+
+
+
+@media (min-width:768px) {
+    #burger-menu {
+        left: 5rem;
+    }
+
+
+}
