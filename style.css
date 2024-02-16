@@ -17,6 +17,8 @@ header {
     margin-left: 12px;
     padding: 10px 25px;
     background-color: white;
+    background-color: white;
+    position: relative;
 }
 
 .all-header p {
@@ -145,6 +147,15 @@ header {
     display: none;
  
 }
+
+/* HELLO_Friend */
+
+#hello_Friend{
+    background-color: #535da1;
+    height: 200px; 
+}
+
+
 
 @media (max-width:320px) {
     .all-header {
@@ -283,6 +294,9 @@ header {
     }
   
 }
+
+
+
 
 
 
