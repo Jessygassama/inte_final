@@ -1,7 +1,8 @@
 /* header */
-.text-menu{
+.text-menu {
     display: none;
 }
+
 header {
     background-color: #535da1;
     height: 200px;
@@ -138,26 +139,97 @@ header {
     width: 0;
 }
 
-.text-menu2{
+.text-menu2 {
     display: none;
 }
 
-#menu-header2{
-  
+#menu-header2 {
+
     display: none;
- 
+
 }
 
 /* HELLO_Friend */
 
-#hello_Friend{
+#hello_Friend {
     background-color: #535da1;
-    height: 200px; 
+    height: auto;
+}
+
+.avatar-image {
+    width: 90.4px;
+    height: 90.4px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.title-texte h1 {
+    font-size: 44px;
+    margin-left: 1rem !important;
+    font-weight: 700;
+}
+
+.title-texte {
+    display: flex;
+    align-items: center;
+}
+
+.hero-texte h2 {
+    font-size: 33px;
+    color: #14B789;
+    font-weight: 700;
+
+}
+
+.circle-title {
+    background: white;
+    border-radius: 100px;
+    padding: 8px 24px;
+}
+
+.circle-title2 {
+    background: white;
+    border-radius: 100px;
+    padding: 8px 24px;
+    margin-top: 1.5rem;
+}
+
+.hero-texte p {
+    font-size: 16px;
+    padding: 6px 12px;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.hero-image {
+    background: white;
+    border-radius: 100%;
+    /* position: absolute; */
+    z-index: 22;
+    top: -50px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    pointer-events: none;
+}
+
+.img-fluid {
+    width: 300px;
+    height: 300px;
+}
+
+.hero-imagee {
+    display: flex;
+    background: #14B789;
+    padding: 10px;
+
 }
 
 
 
-@media (max-width:320px) {
+
+
+@media (max-width:320px) and  (max-width:768px){
     .all-header {
         display: flex;
         flex-direction: column;
@@ -203,7 +275,8 @@ header {
     .text-menu {
         display: block;
     }
-    
+
+  
     
 }
 
@@ -245,6 +318,12 @@ header {
     .text-menu {
         display: block;
     }
+
+    .hero-texte h1 {
+        text-align: center;
+    }
+
+    
 }
 
 
@@ -275,24 +354,24 @@ header {
 
     }
 
-    .text-menu2{
+    .text-menu2 {
         display: block;
     }
-    
-    #menu-header2{
+
+    #menu-header2 {
         display: block;
         display: flex;
         justify-content: space-around;
     }
 
-    #menu-header2 li{
+    #menu-header2 li {
         padding-right: 1rem;
     }
 
-    .text-menu{
+    .text-menu {
         display: none;
     }
-  
+
 }
 
 
@@ -300,10 +379,65 @@ header {
 
 
 
-@media (min-width:768px) {
+@media (min-width:768px)and (max-width:1023px) {
     #burger-menu {
         left: 5rem;
     }
 
+    .hero-texte h2 {
+        display: inline-block;
+    }
 
+    .hero-image {
+        background: white;
+        border-radius: 100%;
+        position: absolute;
+        z-index: 22;
+        top: 7rem;
+        right: 0;
+        left: 29rem;
+        margin: auto;
+        pointer-events: none;
+        
+    }
+
+    .img-fluid {
+        width: 274px;
+        height: 260px;
+    }
+
+    .hero-imagee{
+        background: none;
+    }
+}
+
+@media (min-width:1024px) {
+    .hero-image {
+        background: white;
+        border-radius: 100%;
+        position: absolute;
+        z-index: 22;
+        top: 7rem;
+        right: 0;
+        left: 29rem;
+        margin: auto;
+        pointer-events: none;
+        
+    }
+
+    .img-fluid {
+        width: 350px;
+        height: 350px;
+    }
+
+    .hero-imagee{
+        background: none;
+    }
+
+    .hero-texte h2{
+        display: inline-block;
+    }
+    .hero-texte{
+        margin-left: 13%;
+    }
 }
