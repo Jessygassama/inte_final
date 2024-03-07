@@ -282,6 +282,128 @@ header {
 }
 
 
+
+/* LOGO */
+
+.profile-body{
+    box-sizing: border-box;
+}
+
+.profile-thumb{
+    border: 1px solid #e9eaeb;
+    border-radius:20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-title{
+    border-bottom: 1px solid #e9eaeb;
+    padding: 15px 30px;
+}
+
+.profile-title h4{
+    font-size: 22px;
+    font-weight:700;
+    letter-spacing: -1px;
+    color: black;
+}
+
+.profile-small-title{
+    border-right: 1px solid #e9eaeb;
+    color: #14B789;
+    font-weight:700;
+    min-width: 140px;
+    margin-right: 10px;
+    padding: 13px 30px;
+    display: inline-block;
+    box-sizing:  border-box;
+}
+.profile-small-title p{
+    color: #717275;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.featured-botder-bottom{
+    border-bottom: 1px solid #e9eaeb;
+    margin-top: 3rem!important;
+
+
+}
+
+.py-2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.featured-numbers{
+    font-size: 62px;
+    line-height: normal;
+    display: block;
+    font-weight: 700;
+}
+
+.featured-text{
+    color: #14B789;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.featured-border-start{
+    border-left: 1px  solid#e9eaeb;
+    width: 50%;
+}
+
+.featured-border-bottom{
+   
+
+    border-bottom: 1px solid#e9eaeb;
+    
+}
+
+.ps-5{
+    padding-left: 3rem;
+}
+
+.py-2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 50%;
+}
+
+.pt-4{
+    padding-top: 1.5rem!important;
+    width: 50%;
+}
+
+.futur-1{
+    display: flex;
+    justify-content: center;
+}
+
+
+.futur-2{
+    display: flex;
+    justify-content: center;
+}
+
+.global-futur{
+    margin-top: 3rem;
+}
+
+#logo{
+    background: #f9f9f9;
+}
+
+.bg-w{
+    background: white;
+}
+
+.global-logo{
+    padding-bottom: 2rem;
+}
+
+
 @media (max-width:320px) and  (max-width:768px){
     .all-header {
         display: flex;
@@ -466,6 +588,21 @@ header {
     .section-wrap{
         justify-content: flex-end;
     }
+
+    .global-logo{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        
+    }
+
+    .profile-thumb{
+        width: 40%;
+    }
+
+    .global-futur{
+        width: 40%;
+    }
 }
 
 
@@ -531,5 +668,20 @@ header {
 
     .about-thumb h3{
         font-size:  38px;
+    }
+
+    .global-logo{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        
+    }
+
+    .profile-thumb{
+        width: 40%;
+    }
+
+    .global-futur{
+        width: 40%;
     }
 }
